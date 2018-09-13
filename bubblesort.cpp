@@ -9,7 +9,7 @@ int * bubblesort(int values[LENGTH]) {
     bool sorted = false; 
     while (!sorted) {
         sorted = true;
-        for (int c = 0; c < LENGTH; c++) {
+        for (int c = 0; c < LENGTH-1; c++) {
             if (values[c] > values[c+1]) {
                 int temp = values[c];
                 values[c] = values[c+1];
